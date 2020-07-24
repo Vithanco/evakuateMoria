@@ -15,11 +15,11 @@ struct EvakuermoriaDk: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://github.com/Vithanco/evakuateMoria.git")!
-    var name = "EvakuermoriaDk"
+    var name = "Evakuer Moria"
     var description = "A description of EvakuermoriaDk"
-    var language: Language { .english }
+    var language: Language { .danish }
     var imagePath: Path? { nil }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try EvakuermoriaDk().publish(withTheme: .foundation, deployedUsing:.gitHub("Vithanco/evakuateMoria"))
+try EvakuermoriaDk().publish(withTheme: .foundation, deployedUsing: .gitHub("Vithanco/evakuateMoria"))
